@@ -6,7 +6,7 @@ import time
 
 dwEntityList = (0x4D04AC4)
 dwForceAttack = (0x313618C)
-dwLocalPlayer = (0xCF1A4C)
+dwLocalPlayer = (0xCF2A4C)
 m_fFlags = (0x104)
 m_iCrosshairId = (0xB3AC)
 m_iTeamNum = (0xF4)
@@ -24,7 +24,7 @@ def main():
         entity = pm.read_int(player + m_iCrosshairId)
         
              
-
+       
         if entity > 0 and entity <= 64:
             entity = pm.read_int(client + dwEntityList + (entity -1) * 0x10)
             entity_team = pm.read_int(entity + m_iTeamNum)
@@ -34,6 +34,7 @@ def main():
                 if keyboard.is_pressed("left shift") or keyboard.is_pressed("left ctrl"):
                     pyautogui.click()
                     time.sleep(0.015)
+                    print(entity)
 
                 # shooting = True
                 # pm.write_int(client + dwForceAttack, 5)
