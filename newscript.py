@@ -4,8 +4,8 @@ import pymem.process
 import pyautogui
 import time
 
-dwEntityList = (0x4D03AA4)
-dwForceAttack = (0x313519C)
+dwEntityList = (0x4D04AC4)
+dwForceAttack = (0x313618C)
 dwLocalPlayer = (0xCF1A4C)
 m_fFlags = (0x104)
 m_iCrosshairId = (0xB3AC)
