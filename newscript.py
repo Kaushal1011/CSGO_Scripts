@@ -4,9 +4,9 @@ import pymem.process
 import pyautogui
 import time
 
-dwEntityList = (0x4D04AC4)
+dwEntityList = (0x4D04A74)
 dwForceAttack = (0x313618C)
-dwLocalPlayer = (0xCF2A4C)
+dwLocalPlayer = (0xCF2A3C)
 m_fFlags = (0x104)
 m_iCrosshairId = (0xB3AC)
 m_iTeamNum = (0xF4)
@@ -31,10 +31,10 @@ def main():
             player_team = pm.read_int(player + m_iTeamNum)
                     
             if player_team != entity_team:
-                if keyboard.is_pressed("left shift") or keyboard.is_pressed("left ctrl"):
+                if keyboard.is_pressed("left shift") or keyboard.is_pressed("left ctrl") or(keyboard.is_pressed("a") and keyboard.is_pressed("d")):
                     pyautogui.click()
                     time.sleep(0.015)
-                    print(entity)
+                    
 
                 # shooting = True
                 # pm.write_int(client + dwForceAttack, 5)
