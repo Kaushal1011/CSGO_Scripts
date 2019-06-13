@@ -8,6 +8,6 @@ This was made for learnig and fun purposes only :D.
 ______
 Trigger Bot
 Shoots in Game if you aim at enemy and are pressing the following keys
-- Left Shift
-- Left Ctrl
-- a+d
+- Left Shift or
+- Left Ctrl or 
+- a+d 
