@@ -11,3 +11,7 @@ Shoots in Game if you aim at enemy and are pressing the following keys
 - Left Shift or
 - Left Ctrl or 
 - a+d 
+______
+Bunny Hop 
+Starts Bunny Hopping in game when you
+- press alt
