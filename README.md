@@ -6,12 +6,12 @@ You can get VAC Banned from using this.
 This was made for learnig and fun purposes only :D.
 
 ______
-Trigger Bot
+Trigger Bot :
 Shoots in Game if you aim at enemy and are pressing the following keys
 - Left Shift or
 - Left Ctrl or 
 - a+d 
 ______
-Bunny Hop 
+Bunny Hop : 
 Starts Bunny Hopping in game when you
 - press alt
