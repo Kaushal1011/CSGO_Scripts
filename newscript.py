@@ -15,7 +15,7 @@ import pyautogui
 import pymem
 import pymem.process
 
-dwEntityList = (0x4D04A74)
+dwEntityList = (0x4D04B04)
 dwForceAttack = (0x313618C)
 dwLocalPlayer = (0xCF2A3C)
 m_fFlags = (0x104)
