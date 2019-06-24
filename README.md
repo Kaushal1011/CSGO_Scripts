@@ -6,7 +6,7 @@ You can get VAC Banned from using this.
 This was made for learnig and fun purposes only :D.
 
 ______
-Trigger Bot :
+Trigger Bot(Probably Outdated As of now i will update as soon as i get time) :
 Shoots in Game if you aim at enemy and are pressing the following keys
 - Left Shift or
 - Left Ctrl or 
