@@ -1,4 +1,4 @@
-# CSGO_Scripts
+# CSGO_Scripts (OutDated)
 Mostly Scripts Related to CSGO such as Auto Trigger and Bee Hopping
 
 Do not use these while playing competative matchs or do but at your own risk.
