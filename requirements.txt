@@ -10,7 +10,7 @@ Jinja2==2.10.1
 keyboard==0.13.3
 MarkupSafe==1.1.1
 packaging==19.0
-Pillow==6.2.0
+Pillow==9.3.0
 PyAutoGUI==0.9.44
 pycodestyle==2.5.0
 PyGetWindow==0.0.5
