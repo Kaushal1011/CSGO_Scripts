@@ -28,30 +28,29 @@ client = pymem.process.module_from_name(pm.process_handle,
 
 
 def main():
+    print("Script Running")
+    print("Press ESC to exit the script")
     while True:
-        player = pm.read_int(client + dwLocalPlayer)
+        # Check for exit key
+        if keyboard.is_pressed("esc"):
+            print("Exiting script...")
+            break
 
-        entity = pm.read_int(player + m_iCrosshairId)
+        try:
+            player = pm.read_int(client + dwLocalPlayer)
+            entity = pm.read_int(player + m_iCrosshairId)
 
-        if entity > 0 and entity <= 64:
-            entity = pm.read_int(client + dwEntityList + (entity - 1) * 0x10)
-            entity_team = pm.read_int(entity + m_iTeamNum)
-            player_team = pm.read_int(player + m_iTeamNum)
+            if entity > 0 and entity <= 64:
+                entity = pm.read_int(client + dwEntityList + (entity - 1) * 0x10)
+                entity_team = pm.read_int(entity + m_iTeamNum)
+                player_team = pm.read_int(player + m_iTeamNum)
 
-            if player_team != entity_team:
-                if keyboard.is_pressed("left shift") or keyboard.is_pressed(
-                        "left ctrl") or (keyboard.is_pressed("a")
-                                         and keyboard.is_pressed("d")):
-                    pyautogui.click()
-                    time.sleep(0.015)
-
-                # shooting = True
-                # pm.write_int(client + dwForceAttack, 5)
-
-        # if not keyboard.is_pressed(trigger_key) and shooting == True:
-        #     pm.write_int(client + dwForceAttack, 4)
-        #     shooting = False
-
-
-if __name__ == '__main__':
-    main()
+                if player_team != entity_team:
+                    if keyboard.is_pressed("left shift") or keyboard.is_pressed(
+                            "left ctrl") or (keyboard.is_pressed("a")
+                                             and keyboard.is_pressed("d")):
+                        pyautogui.click()
+                        time.sleep(0.015)
+        except Exception as e:
+            print(f"Error reading memory: {e}")
+            time.sleep(0.1)

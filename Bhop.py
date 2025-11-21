@@ -14,11 +14,16 @@ import keyboard
 from time import sleep
 
 def main():
+    print("Press ESC to exit the script")
     while True:
-        # print("Running")
+        # Check for exit key
+        if keyboard.is_pressed("esc"):
+            print("Exiting script...")
+            break
+
+        # Main bhop logic
         if keyboard.is_pressed("left alt"):
             while True:
-                
                 keyboard.send("space")
                 keyboard.send("a")
                 keyboard.send("d")
@@ -26,7 +31,6 @@ def main():
                 sleep(0.05)
                 if not keyboard.is_pressed("left alt"):
                     break
-            
-if __name__ == "__main__":
-    print("Script Running")
-    main()
+
+        sleep(0.01)  # Small delay to prevent CPU overload
+
