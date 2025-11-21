@@ -1,9 +1,9 @@
 '''
 Mostly Scripts Related to CSGO such as Auto Trigger and Bee Hopping
 
-Do not use these while playing competative matchs or do but at your own risk.
+Do not use these while playing competitive matches or do but at your own risk.
 You can get VAC Banned from using this.
-This was made for learnig and fun purposes only :D
+This was made for learning and fun purposes only :D
 
 author: Kaushal Patil
 '''
